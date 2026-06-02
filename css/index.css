@@ -47,3 +47,28 @@ button{
 .testimonios{
     padding: 20px;
 }
+
+nav{
+    background-color: navy;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding: 10px;
+    width: 300px;
+    border-radius: 100px;
+    
+}
+
+.menu button{
+    margin-left: 10px;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 20px;
+}
