@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NextCode</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <nav>
+
+        <img src="./img/nextcode.png" class="logo">
+
+        <div class="menu">
+            <button onclick="location.href='./index.html'">Inicio</button>
+            <button onclick="location.href='./contacto.html'">Contacto</button>
+            <button onclick="location.href='./cursos.html'">Cursos</button>
+        </div>
+
+    </nav>
+    <div class="inicio">
+        <h1>Profesores</h1>
+        <p>Conoce a nuestros profesores expertos en programación.</p>
+    </div>
+   
+<div class="contenedor-profesores">
+        
+        <div class="tarjeta">
+            <img src="./img/profe1.jpg" alt="Profesor 1">
+            <h3>Carlos Mendoza</h3>
+            <h4>C# y .NET Core</h4>
+            <p>Especialista en arquitecturas limpias y el patrón repositorio.</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="./img/profe2.jpg" alt="Profesor 2">
+            <h3>Laura Jiménez</h3>
+            <h4>Infraestructura</h4>
+            <p>Experta en administración de Windows Server y Directorio Activo.</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="./img/profe3.jpg" alt="Profesor 3">
+            <h3>Roberto Silva</h3>
+            <h4>Bases de Datos</h4>
+            <p>Ingeniero enfocado en la optimización y modelado en SQL Server.</p>
+        </div>
+
+        <div class="tarjeta">
+            <img src="./img/profe4.jpg" alt="Profesor 4">
+            <h3>Ana Castillo</h3>
+            <h4>Auditoría TI</h4>
+            <p>Especialista en control interno, gobierno de datos y ciberseguridad.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>
+            © 2026 NextCode Academy
+        </p>
+    </footer>
+</body>
+
+<style>
+
+.contenedor-profesores {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 30px 20px;
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+.tarjeta {
+    width: 200px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding-bottom: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px 8px 0 0; 
+}
+</style>
+
+</html>
