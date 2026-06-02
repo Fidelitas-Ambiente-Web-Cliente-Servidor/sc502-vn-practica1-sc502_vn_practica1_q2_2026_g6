@@ -72,3 +72,11 @@ nav{
     text-align: center;
     margin-top: 20px;
 }
+
+footer{
+    background-color: navy;
+    color: white;
+    text-align: center;
+
+    padding: 15px;
+}
