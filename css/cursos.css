@@ -1,70 +1,59 @@
-.page-header {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #eef;
-}
 
-.search-container {
-    text-align: center;
+.search-container{
     padding: 20px;
 }
 
-.search-container input {
+.search-container input{
     width: 50%;
     padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+
+    border-radius: 10px;
+    border: none;
 }
 
-main {
-    padding: 0 20px;
+section{
+    padding: 20px;
 }
 
-section {
-    margin-bottom: 40px;
-}
+/* CURSOS */
 
-h2 {
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-.cursos-container {
+.cursos-container{
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.card{
+    background-color: white;
+    width: 250px;
+    margin: 20px auto;
     padding: 15px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
-.card img {
-    max-width: 100%;
+.card img{
+    width: 100%;
     height: 150px;
     object-fit: contain;
-    margin-bottom: 15px;
 }
 
-.card h3 {
-    margin: 10px 0;
+.card h3{
+    margin-top: 15px;
 }
 
-.card .category {
-    font-style: italic;
-    color: #555;
-    font-size: 0.9em;
+.category{
+    color: gray;
 }
 
-.card .duration, .card .price {
+.duration,
+.price{
     font-weight: bold;
-    color: #333;
+}
+
+footer{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
