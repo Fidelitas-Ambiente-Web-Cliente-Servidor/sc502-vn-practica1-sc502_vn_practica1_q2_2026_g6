@@ -22,3 +22,37 @@
     object-fit: cover; 
     border-radius: 8px 8px 0 0; 
 }
+
+.mision-vision {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto 60px auto; 
+    padding: 0 20px;
+}
+
+.caja-texto {
+    flex: 1; 
+    min-width: 280px; 
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.caja-texto h2 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.caja-texto p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
