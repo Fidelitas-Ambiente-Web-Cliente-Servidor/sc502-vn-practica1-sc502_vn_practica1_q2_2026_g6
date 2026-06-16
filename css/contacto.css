@@ -119,3 +119,21 @@ footer{
 
     padding: 15px;
 }
+small {
+    color: red;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+#mensajeExito {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#btnEnviar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
