@@ -3,95 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Cursos - NextCode</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/cursos.css">
 </head>
 <body>
-     <nav>
-
+    <nav>
         <img src="./img/nextcode.png" class="logo">
-
         <div class="menu">
+            <button onclick="location.href='./index.html'">Inicio</button>
             <button onclick="location.href='./contacto.html'">Contacto</button>
-            <button onclick="location.href='./cursos.html'">Cursos</button>
             <button onclick="location.href='./profesores.html'">Profesores</button>
         </div>
-
     </nav>
 
-    <header class="page-header">
+    <div class="inicio">
         <h1>Catálogo de Cursos</h1>
         <p>Explora nuestra amplia gama de cursos de programación.</p>
-    </header>
+    </div>
 
     <div class="search-container">
-        <input type="text" placeholder="Buscar cursos...">
+        <input type="text" id="search-input" placeholder="Buscar cursos...">
+    </div>
+
+    <div id="category-filters" class="category-filters">
+        <button data-category="todos" class="activo">Todos</button>
+        <button data-category="Desarrollo Web">Desarrollo Web</button>
+        <button data-category="Data Science">Data Science</button>
+        <button data-category="Software">Software</button>
+        <button data-category="Diseño">Diseño</button>
     </div>
 
     <main>
-        <section id="desarrollo-web">
-            <h2>Desarrollo Web</h2>
-            <div class="cursos-container">
-                <div class="card">
-                    <img src="./img/phyton.png" alt="Curso de Python">
-                    <h3>Python</h3>
-                    <p class="category">Desarrollo Backend</p>
-                    <p>Aprende a crear aplicaciones web robustas con Python y Django.</p>
-                    <p class="duration">Duración: 40 horas</p>
-                    <p class="price">Precio: $100</p>
-                </div>
-                <div class="card">
-                    <img src="./img/JavaScript-Symbol.png" alt="Curso de JavaScript">
-                    <h3>JavaScript</h3>
-                    <p class="category">Desarrollo Frontend</p>
-                    <p>Domina el lenguaje de la web y crea interactividad.</p>
-                    <p class="duration">Duración: 35 horas</p>
-                    <p class="price">Precio: $90</p>
-                </div>
-                <div class="card">
-                    <img src="./img/html-css-logo.C2cnsBrF.png" alt="Curso de HTML y CSS">
-                    <h3>HTML & CSS</h3>
-                    <p class="category">Desarrollo Frontend</p>
-                    <p>Las bases para construir cualquier sitio web.</p>
-                    <p class="duration">Duración: 20 horas</p>
-                    <p class="price">Precio: $50</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="desarrollo-software">
-            <h2>Desarrollo de Software</h2>
-            <div class="cursos-container">
-                <div class="card">
-                    <img src="./img/c++.png" alt="Curso de C++">
-                    <h3>C++</h3>
-                    <p class="category">Software</p>
-                    <p>Aprende el potente lenguaje C++ orientado a objetos.</p>
-                    <p class="duration">Duración: 50 horas</p>
-                    <p class="price">Precio: $120</p>
-                </div>
-                <div class="card">
-                    <img src="./img/Java_logo_icon.png" alt="Curso de Java">
-                    <h3>Java</h3>
-                    <p class="category">Software</p>
-                    <p>Desarrolla aplicaciones multiplataforma con Java.</p>
-                    <p class="duration">Duración: 45 horas</p>
-                    <p class="price">Precio: $110</p>
-                </div>
-                <div class="card">
-                    <img src="./img/Csharp_Logo.png"Curso de C#">
-                    <h3>C#</h3>
-                    <p class="category">Software</p>
-                    <p>Crea aplicaciones de escritorio y web con el framework .NET.</p>
-                    <p class="duration">Duración: 45 horas</p>
-                    <p class="price">Precio: $115</p>
-                </div>
-            </div>
-        </section>
+        <div id="cursos-container" class="cursos-container"></div>
     </main>
 
     <footer>
         <p>© 2026 NextCode Academy</p>
     </footer>
+
+    <script src="./JS/cursos.js"></script>
 </body>
 </html>
