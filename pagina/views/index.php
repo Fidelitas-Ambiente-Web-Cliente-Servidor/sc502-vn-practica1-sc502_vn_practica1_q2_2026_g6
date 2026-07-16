@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <title>NextCode</title>
 
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <nav>
 
-        <img src="./img/nextcode.png" class="logo">
+        <img src="img/nextcode.png" class="logo">
 
         <div class="menu">
             <button onclick="location.href='./contacto.html'">Contacto</button>
@@ -26,7 +26,24 @@
     <div>
         <h2>Cursos Destacados</h2>
     </div>
-    <div class="cursos" id="contenedor-cursos">
+    <div class="cursos">
+
+        <?php foreach($cursos as $curso): ?>
+
+            <div class="card">
+
+                <img src="<?= $curso['imagen']; ?>" alt="<?= $curso['nombre']; ?>">
+
+                <h3><?= $curso['nombre']; ?></h3>
+
+                <p><?= $curso['categoria']; ?></p>
+
+                <p><?= $curso['descripcion']; ?></p>
+
+            </div>
+
+        <?php endforeach; ?>
+
     </div>
     <div class="estadisticas">
         <h2>Estadísticas</h2>
@@ -44,6 +61,6 @@
             © 2026 NextCode Academy
         </p>
     </footer>
-    <script src="./js/index.js"></script>
+    
 </body>
 </html>

@@ -3,7 +3,7 @@ class Database
 {
 
     private static string $host     = 'db';          
-    private static string $dbname   = 'tareas_db'; 
+    private static string $dbname   = 'nextcode'; 
     private static string $user     = 'root';
     private static string $password = 'root';
 
