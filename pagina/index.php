@@ -13,6 +13,14 @@ switch($controller){
 
         break;
 
+    case 'cursos':
+
+        require_once 'controllers/CursosController.php';
+
+        $obj = new CursosController();
+
+        break;
+
     default:
 
         require_once 'controllers/IndexController.php';
