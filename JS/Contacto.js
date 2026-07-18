@@ -108,12 +108,21 @@ document
     .getElementById("formulario")
     .addEventListener("submit", function (e) {
 
-        e.preventDefault();
+        const formularioValido =
+            validarNombre() &&
+            validarCorreo() &&
+            validarTelefono() &&
+            validarAsunto() &&
+            validarMensaje();
 
-        mensajeExito.textContent =
-            "Formulario enviado correctamente.";
+        if (!formularioValido) {
+            e.preventDefault();
 
-        this.reset();
+            mensajeExito.textContent =
+                "Revise los campos indicados.";
 
-        btnEnviar.disabled = true;
+            return;
+        }
+
+        mensajeExito.textContent = "";
     });
